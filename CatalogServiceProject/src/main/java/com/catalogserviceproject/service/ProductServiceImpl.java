@@ -10,14 +10,14 @@ public class ProductServiceImpl implements ProductService {
 
 	ProductDao productDao=new ProductDaoImpl();	
 	@Override
-	public List<Product> getAllProduct() throws ClassNotFoundException, SQLException {
+	public List<Product> viewAllProduct() throws ClassNotFoundException, SQLException {
 			
 			return productDao.listAllProducts();
 		}
 
 	@Override
-	public Product getProductItemsById(String id) throws ClassNotFoundException, SQLException {
-		return productDao.getProductById(id);
+	public Product getProductItemsByCode(String code) throws ClassNotFoundException, SQLException {
+		return productDao.getProductById(code);
 	}
 	
 	

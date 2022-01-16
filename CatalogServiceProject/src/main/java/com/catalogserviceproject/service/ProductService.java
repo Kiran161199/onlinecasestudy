@@ -6,6 +6,6 @@ import java.util.List;
 import com.catalogserviceproject.bean.Product;
 
 public interface ProductService {
-	List<Product> getAllProduct()throws ClassNotFoundException,SQLException;
-	public Product getProductItemsById(String id) throws ClassNotFoundException, SQLException;
+	List<Product> viewAllProduct()throws ClassNotFoundException,SQLException;
+	public Product getProductItemsByCode(String code) throws ClassNotFoundException, SQLException;
 }
